@@ -7,7 +7,7 @@ from datetime import datetime
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s : %(levelname)s : %(message)s",
-    filename="logging.log")
+    filename="log_cam_list.log")
 
 
 def cam_list():

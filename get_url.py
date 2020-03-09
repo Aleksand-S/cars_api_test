@@ -9,7 +9,7 @@ import logging
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s : %(levelname)s : %(message)s",
-    filename="logging.log")
+    filename="log_url.log")
 
 
 def random_start():
@@ -77,14 +77,12 @@ def main():
     logging.info('------ START SCRIPT GET URL FOR 20 CAMERAS ------')
     start = random_start()
     end = random_end(start)
-    logging.info('Start stream: {}. End stream: {}'.format(start.isoformat(), end.isoformat()))
+    logging.info('\nStart stream: {}\nEnd stream: {}'.format(start.isoformat(), end.isoformat()))
     cameras_id_random_list = get_cams_id_list()
     logging.info('A list of cameras ID was generated.')
 
     for cam_id in cameras_id_random_list:
         threading.Thread(target=get_url, args=(cam_id, start.isoformat(), end.isoformat())).start()
-
-    logging.info('------ FINISH SCRIPT GET URL FOR 20 CAMERAS ------')
 
 
 if __name__ == '__main__':
