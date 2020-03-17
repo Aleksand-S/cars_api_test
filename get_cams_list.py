@@ -13,8 +13,8 @@ logging.basicConfig(
 def cam_list():
     logging.info('------ START SCRIPT GET CAMERAS LIST------')
     login = 'api'
-    password = '1iGcg/AxRYPVAYRoJ2o7qcZL9aKZCFdYT+yVphmSKtQ='
-    url_address = 'http://192.168.192.12:3030/list'
+    password = '1iGcg/AxRYPVAYRoasddSD9aKZCFdYT+yVphmSKtQ'
+    url_address = 'http://10.32.2.24:3030/list'
     time1 = datetime.now()
 
     try:

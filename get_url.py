@@ -25,8 +25,8 @@ def random_end(start):
 
 def get_url(cam_id_request, start_request, finish_request):
     login = 'api'
-    password = '1iGcg/AxRYPVAYRoJ2o7qcZL9aKZCFdYT+yVphmSKtQ='
-    url_address = 'http://192.168.192.12:3030/archive'
+    password = '1iGcg/AxRYPVAYRoasddSD9aKZCFdYT+yVphmSKtQ'
+    url_address = 'http://10.32.2.24:3030/archive'
     time1 = datetime.now()
 
     try:
